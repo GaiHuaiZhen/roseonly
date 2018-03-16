@@ -1,0 +1,27 @@
+{
+  "name": "ghz",
+  "version": "1.0.0",
+  "description": "\"鲜花网站\"",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaiHuaiZhen/roseonly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaiHuaiZhen/roseonly/issues"
+  },
+  "homepage": "https://github.com/GaiHuaiZhen/roseonly#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
