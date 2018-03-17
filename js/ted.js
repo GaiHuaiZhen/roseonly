@@ -131,7 +131,7 @@ define(["jquery"],function($){
 		
 		$(".footer .footer_top img").mouseenter(function(){
 			
-			alert()
+			
 			
 			
 			//console.log($(this).width())

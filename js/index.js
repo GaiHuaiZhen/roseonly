@@ -4,11 +4,12 @@ require.config({
 		"menu_top":"menu_top",
 		"banner":"banner",
 		"best":"best",
-		"ted":"ted"
+		"ted":"ted",
+		"popup":"popup"
 	}
 })
 
-require(["jquery","menu_top","banner","best","ted"],function($,menu_top,banner,best,ted){
+require(["jquery","menu_top","banner","best","ted","popup"],function($,menu_top,banner,best,ted,popup){
 	//菜单
 	menu_top.fn()
 	
@@ -16,7 +17,11 @@ require(["jquery","menu_top","banner","best","ted"],function($,menu_top,banner,b
 	banner.fn()
 	//选项卡
 	best.fn()
-	
+	//首页商品
 	ted.fn()
+	
+	//首页弹出
+	popup.fn()
+	
 	
 })
