@@ -1,4 +1,5 @@
 define(["jquery"],function($){
+	
 	function fn(){
 	
 	$.ajax({
@@ -46,6 +47,23 @@ define(["jquery"],function($){
 	}
 			
 			
+			//本来写在popupjs里的，如果发生模块冲突就放回去
+			//吸顶
+			
+			$(document).scroll(function(){
+				
+				if($(document).scrollTop()>$("#nav").offset().top){
+					$(".nav").css({"position":"fixed","top":0,"z-index":"99999"})
+					$(".menu").css({"position":"fixed","top":"40"})
+					
+				}else{
+					$(".nav").css("position","static")
+					$(".menu").css({"position":"absolute"})
+				}
+				
+				
+				
+			})
 			
 		}
 		
@@ -59,5 +77,8 @@ define(["jquery"],function($){
 		 fn:fn,
 		 
 	}
+	
+	
+
 	
 })

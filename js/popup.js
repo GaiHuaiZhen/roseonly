@@ -28,27 +28,12 @@ define(["jquery"],function($){
 		})
 		
 			$(".fix p:eq(2)").click(function(){
-				$(document).scrollTop(0)
+				$("html").animate({"scrollTop":0},500)
 				
 			})
 			
 			
-			//吸顶
 			
-			$(document).scroll(function(){
-				
-				if($(document).scrollTop()>$("#nav").offset().top){
-					$(".nav").css({"position":"fixed","top":0,"z-index":"99999"})
-					$(".menu").css({"position":"fixed","top":"40"})
-					
-				}else{
-					$(".nav").css("position","static")
-					$(".menu").css({"position":"absolute"})
-				}
-				
-				
-				
-			})
 			
 			
 			
