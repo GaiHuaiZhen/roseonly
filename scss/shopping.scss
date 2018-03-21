@@ -429,4 +429,63 @@ img{vertical-align: top;border: none;margin: 0;padding: 0;}
 }
 
 
-//alipay
+//shopping
+#shopping{
+    width: 100%;
+    
+}
+.shopping{
+    width: 960px;
+    margin: 0 auto;
+    h2{
+        margin: 20px 0;
+    }
+    table{
+        border-collapse: collapse;
+        
+        
+        tr{
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #000;
+            td{
+                padding: 0 25px;
+                table-layout:auto;
+                
+            }
+       
+        }
+        
+        
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+
+.tdd{
+    cursor: pointer;
+}
+
+.js{
+    margin: 50px 0;
+    p{
+        float: right;
+        b{
+            padding: 0 20px;
+            color: red;
+        }
+        span{
+            background: red;
+            color: #fff;
+            padding: 5px;
+            cursor: pointer;
+            
+        }
+    }
+   
+   
+    
+}

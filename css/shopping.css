@@ -317,3 +317,40 @@ img {
           font-weight: 900; }
     .ask .ask_right p:nth-of-type(5) {
       font-size: 14px; }
+
+#shopping {
+  width: 100%; }
+
+.shopping {
+  width: 960px;
+  margin: 0 auto; }
+  .shopping h2 {
+    margin: 20px 0; }
+  .shopping table {
+    border-collapse: collapse; }
+    .shopping table tr {
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #000; }
+      .shopping table tr td {
+        padding: 0 25px;
+        table-layout: auto; }
+    .shopping table img {
+      width: 100px;
+      height: 100px; }
+
+.tdd {
+  cursor: pointer; }
+
+.js {
+  margin: 50px 0; }
+  .js p {
+    float: right; }
+    .js p b {
+      padding: 0 20px;
+      color: red; }
+    .js p span {
+      background: red;
+      color: #fff;
+      padding: 5px;
+      cursor: pointer; }

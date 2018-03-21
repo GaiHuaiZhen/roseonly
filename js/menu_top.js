@@ -65,6 +65,11 @@ define(["jquery"],function($){
 				
 			})
 			
+			
+			$("#nav").click(function(){
+		location.href="list.html"
+	})
+			
 		}
 		
 	});

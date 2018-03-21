@@ -38,5 +38,8 @@ require(["jquery","menu_top","banner","best","ted","popup","cookie"],function($,
 		
 	})
 	
+	//跳转
+	
+	
 	//alert($("header_right ul li:eq(0) a").text())
 })
