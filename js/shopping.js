@@ -47,31 +47,32 @@ require(["jquery","cookie","menu_top"],function($,cookie,menu_top){
 	//
 	
 	$(".tdd").click(function(){
-		
+		var flag= confirm("确认删除")
 		//alert()
-		$(this).parent("tr").remove()
+		if(flag){
+			$(this).parent("tr").remove()
 		
 		var remo=$(this).siblings("td").find("img").attr("src")
 		//console.log(remo)
 		delete shop[remo]
 		
-		
+		//$(".shopping table").find("tr").siblings(":eq(0)").empty()
 		
 		var i=0
 	var num=0
 	for (attr in shop) {
 		i++
 		//console.log(i)
-		$(".shopping table").append(`<tr>
-					<td>${i}</td>
-					<td>roseolny</td>
-					<td><img src="${attr}"/></td>
-					<td>${unescape(shop[attr].name)}</td>
-					<td>${unescape(shop[attr].price)}</td>
-					<td>${unescape(shop[attr].index)}</td>
-					<td class="tdd">删除</td>
-					
-				</tr>`)
+//		$(".shopping table").append(`<tr>
+//					<td>${i}</td>
+//					<td>roseolny</td>
+//					<td><img src="${attr}"/></td>
+//					<td>${unescape(shop[attr].name)}</td>
+//					<td>${unescape(shop[attr].price)}</td>
+//					<td>${unescape(shop[attr].index)}</td>
+//					<td class="tdd">删除</td>
+//					
+//				</tr>`)
 		
 		
 		//总价
@@ -84,6 +85,8 @@ require(["jquery","cookie","menu_top"],function($,cookie,menu_top){
 		
 		
 		$.cookie("key",JSON.stringify(shop))
+		}
+		
 	})
 	
 	

@@ -5,13 +5,19 @@ require.config({
 		"menu_top":"menu_top"
 		
 		
+	},
+	
+	shim:{
+		"flyto":{
+			deps:["jquery"]
+		}
 	}
 	
 })
 
 
 
-require(["jquery","cookie","menu_top"],function($,cookie,menu_top){
+require(["jquery","cookie","menu_top","flyto"],function($,cookie,menu_top){
 	
 	//菜单
 	menu_top.fn()
@@ -127,8 +133,32 @@ require(["jquery","cookie","menu_top"],function($,cookie,menu_top){
 	     	"ps":ps
 	     }
 	     $.cookie("key",JSON.stringify(shop))
+	     
 	    // console.log($.cookie("key"))
-	     location.href="shopping.html"
+	    var clo=$(".ask_left dl dt img:eq(0)").clone()
+	    //插件啊啊啊啊
+	    clo.fly({ 
+            start: { 
+                left: $(".ask_left dl dt img:eq(0)").offset().left, //开始位置（必填）#fly元素会被设置成position: fixed 
+                top: $(".ask_left dl dt img:eq(0)").offset().top //开始位置（必填） 
+            }, 
+            end: { 
+                left: $(".num").offset().left, //结束位置（必填） 
+                top: $(".num").offset().top, //结束位置（必填） 
+                width: 0, //结束时宽度 
+                height: 0 //结束时高度 
+            }, 
+            onEnd: function(){ //结束回调 
+//              $("#msg").show().animate({width: '250px'}, 200).fadeOut(1000); //提示信息 
+//              addcar.css("cursor","default").removeClass('orange').unbind('click'); 
+//              this.destory(); //移除dom 
+location.href="shopping.html"
+            } 
+        });
+	    
+	    
+	    
+	     
 	     
 //	     for(attr in shop){
 //	     	alert(attr)
@@ -242,6 +272,10 @@ require(["jquery","cookie","menu_top"],function($,cookie,menu_top){
 //	return JSON.parse(a)
 //}
 //console.log(oj($.cookie("key")))
+
+
+
+
 
 	})
 	
